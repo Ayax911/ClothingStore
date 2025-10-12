@@ -9,3 +9,4 @@ C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Domain\obj\Debug\net9.0
 C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Domain\obj\Debug\net9.0\refint\ClothingStore.Domain.dll
 C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Domain\obj\Debug\net9.0\ClothingStore.Domain.pdb
 C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Domain\obj\Debug\net9.0\ref\ClothingStore.Domain.dll
+C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Domain\obj\Debug\net9.0\ClothingStore.Domain.sourcelink.json

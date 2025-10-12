@@ -13,3 +13,4 @@ C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Persistence\obj\Debug\n
 C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Persistence\obj\Debug\net9.0\refint\ClothingStore.Persistence.dll
 C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Persistence\obj\Debug\net9.0\ClothingStore.Persistence.pdb
 C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Persistence\obj\Debug\net9.0\ref\ClothingStore.Persistence.dll
+C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Persistence\obj\Debug\net9.0\ClothingStore.Persistence.sourcelink.json

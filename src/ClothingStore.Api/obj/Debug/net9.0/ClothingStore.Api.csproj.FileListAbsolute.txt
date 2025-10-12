@@ -36,3 +36,4 @@ C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Api\obj\Debug\net9.0\re
 C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Api\obj\Debug\net9.0\ClothingStore.Api.pdb
 C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Api\obj\Debug\net9.0\ClothingStore.Api.genruntimeconfig.cache
 C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Api\obj\Debug\net9.0\ref\ClothingStore.Api.dll
+C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Api\obj\Debug\net9.0\ClothingStore.Api.sourcelink.json
