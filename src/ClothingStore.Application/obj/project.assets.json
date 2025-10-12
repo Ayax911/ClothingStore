@@ -1,0 +1,120 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0": {
+      "ClothingStore.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/ClothingStore.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ClothingStore.Domain.dll": {}
+        }
+      },
+      "ClothingStore.Persistence/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "ClothingStore.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ClothingStore.Persistence.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ClothingStore.Persistence.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ClothingStore.Domain/1.0.0": {
+      "type": "project",
+      "path": "../ClothingStore.Domain/ClothingStore.Domain.csproj",
+      "msbuildProject": "../ClothingStore.Domain/ClothingStore.Domain.csproj"
+    },
+    "ClothingStore.Persistence/1.0.0": {
+      "type": "project",
+      "path": "../ClothingStore.Persistence/ClothingStore.Persistence.csproj",
+      "msbuildProject": "../ClothingStore.Persistence/ClothingStore.Persistence.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0": [
+      "ClothingStore.Persistence >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\USUARIO\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\USUARIO\\Desktop\\ClothingStore\\src\\ClothingStore.Application\\ClothingStore.Application.csproj",
+      "projectName": "ClothingStore.Application",
+      "projectPath": "C:\\Users\\USUARIO\\Desktop\\ClothingStore\\src\\ClothingStore.Application\\ClothingStore.Application.csproj",
+      "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\USUARIO\\Desktop\\ClothingStore\\src\\ClothingStore.Application\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "projectReferences": {
+            "C:\\Users\\USUARIO\\Desktop\\ClothingStore\\src\\ClothingStore.Persistence\\ClothingStore.Persistence.csproj": {
+              "projectPath": "C:\\Users\\USUARIO\\Desktop\\ClothingStore\\src\\ClothingStore.Persistence\\ClothingStore.Persistence.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
+    },
+    "frameworks": {
+      "net9.0": {
+        "targetAlias": "net9.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
