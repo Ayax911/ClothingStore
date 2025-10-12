@@ -6,6 +6,7 @@ namespace ClothingStore.Domain.Entities
     {
         [Key] public int Id { get; set; }
        
+       [Required(ErrorMessage = "La cédula es obligatoria")]
         public string? Cedula { get; set; }
 
         [MaxLength(100)]
