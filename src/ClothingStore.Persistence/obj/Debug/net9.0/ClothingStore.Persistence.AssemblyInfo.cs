@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ClothingStore.Persistence")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+11f311aebf8a26703e9805895e802502eabab8de")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+56d7f8489472e95eaaeec5487e5db865a0fa9f94")]
 [assembly: System.Reflection.AssemblyProductAttribute("ClothingStore.Persistence")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ClothingStore.Persistence")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
