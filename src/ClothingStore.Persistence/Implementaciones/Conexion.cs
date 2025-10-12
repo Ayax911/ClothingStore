@@ -23,6 +23,10 @@ namespace ClothingStore.Persistence.Implementaciones
             base.OnModelCreating(modelBuilder);
         }
 
+        
+
+
+
     }
 }
 

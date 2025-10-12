@@ -1,33 +1,34 @@
-using Microsoft.EntityFrameworkCore;
-using ClothingStore.Persistence.Implementaciones;
-using ClothingStore.Persistence.Interfaces;
+using Microsoft.OpenApi.Models;
+using ClothingStore.Application;   // <- Importa tus extensiones
+using ClothingStore.Persistence;  // <- Importa tus extensiones
 
 var builder = WebApplication.CreateBuilder(args);
-//Initialize the Api
-// Add services to the container.
 
-builder.Services.AddDbContext<Conexion>(options =>
+// 👇 Agrega tus módulos centralizados de inyección
+builder.Services.AddApplication();
+builder.Services.AddPersistence(builder.Configuration);
+
+// Controladores y Swagger
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen(c =>
 {
-    options.UseSqlServer(
-        builder.Configuration.GetConnectionString("DefaultConnection"),
-        sqlOptions => sqlOptions.MigrationsAssembly("ClothingStore.Persistence")
-    );
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "ClothingStore API", Version = "v1" });
 });
 
-builder.Services.AddScoped<IConexion, Conexion>();
+// Construir app
+var app = builder.Build();
 
-builder.Services.AddControllers();
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-
-var app = builder.Build();//Inyecta servicios
+// Middleware
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
-//app.UseAuthorization(); //Crear modelo de seguridad
+app.UseHttpsRedirection();
+//app.UseAuthentication(); // 🔒 cuando implementes JWT
+app.UseAuthorization();
 
 app.MapControllers();
-
 app.Run();
