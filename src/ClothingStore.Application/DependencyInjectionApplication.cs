@@ -13,6 +13,9 @@ namespace ClothingStore.Application
             services.AddScoped<IClientesAplicacion, ClientesAplicacion>();
             services.AddScoped<IDetallesComprasAplicacion, DetallesComprasAplicacion>();
             services.AddScoped<IProductosAplicacion, ProductosAplicacion>();
+
+            services.AddScoped<IAuthService, AuthService>();
+            services.AddScoped<ITokenService, TokenService>();
       
 
             return services;

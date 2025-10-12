@@ -13,8 +13,13 @@ namespace ClothingStore.Domain.Entities
         [MaxLength(100)]
         public string? Nombre { get; set; }
 
-        [MaxLength(100)]
+        [MaxLength(20)]
         public string? Telefono { get; set; }
+        
+        [MaxLength(100)]
+        [EmailAddress(ErrorMessage = "Email inválido")]
+        public string? Email { get; set; } 
+        public DateTime FechaRegistro { get; set; } = DateTime.UtcNow; 
 
         public Usuarios? Usuario { get; set; }
 
