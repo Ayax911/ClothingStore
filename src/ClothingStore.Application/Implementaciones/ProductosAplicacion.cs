@@ -73,6 +73,10 @@ namespace ClothingStore.Application.Implementaciones
             if (entidad.Id == 0)
                 throw new Exception("lbNoSeGuardo");
 
+            var existente = await _conexion.Productos.FindAsync(entidad.Id);
+            if (existente == null)
+                return null;
+
             _conexion.Productos!.Remove(entidad);
             await _conexion.SaveChangesAsync();
             return entidad;

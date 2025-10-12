@@ -31,28 +31,33 @@ namespace ClothingStore.Application.Implementaciones
 
         public async Task<Clientes?> ModificarAsync(Clientes entidad)
         {
-            if (entidad == null)
-                throw new Exception("lbFaltaInformacion");
 
-            if (entidad.Id == 0)
-                throw new Exception("lbNoSeGuardo");
-
-            // ejemplo de modificación
-            entidad.Nombre = "Prueba Interfaces";
-
-            var entry = _conexion.Entry(entidad);
-            entry.State = EntityState.Modified;
+            var existente = await _conexion.Clientes.FindAsync(entidad.Id);
+            if (existente == null)
+                throw new KeyNotFoundException("Cliente no encontrado");
+            
+            existente.Nombre = entidad.Nombre;
+            existente.Telefono = entidad.Telefono;
+            existente.Cedula = entidad.Cedula;
+            
             await _conexion.SaveChangesAsync();
-            return entidad;
+            return existente;
+     
         }
 
         public async Task<Clientes?> BorrarAsync(Clientes entidad)
         {
+        
             if (entidad == null)
                 throw new Exception("lbFaltaInformacion");
 
             if (entidad.Id == 0)
                 throw new Exception("lbNoSeGuardo");
+
+            var existente = await _conexion.Clientes.FindAsync(entidad.Id);
+
+            if (existente == null)
+                return null;
 
             _conexion.Clientes!.Remove(entidad);
             await _conexion.SaveChangesAsync();
@@ -72,7 +77,7 @@ namespace ClothingStore.Application.Implementaciones
                 throw new Exception("lbFaltaInformacion");
 
             return await _conexion.Clientes!
-                .Where(x => x.Cedula!.Contains(entidad.Cedula!))
+                .Where(x => x.Cedula! == entidad.Cedula)
                 .ToListAsync();
         }
 
