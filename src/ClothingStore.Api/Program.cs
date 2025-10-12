@@ -1,22 +1,32 @@
-var builder = WebApplication.CreateBuilder(args);
+using Microsoft.EntityFrameworkCore;
+using ClothingStore.Persistence.Implementaciones;
+using ClothingStore.Persistence.Interfaces;
 
+var builder = WebApplication.CreateBuilder(args);
+//Initialize the Api
 // Add services to the container.
+
+builder.Services.AddDbContext<Conexion>(options =>
+{
+    options.UseSqlServer(
+        builder.Configuration.GetConnectionString("DefaultConnection"),
+        sqlOptions => sqlOptions.MigrationsAssembly("ClothingStore.Persistence")
+    );
+});
+
+builder.Services.AddScoped<IConexion, Conexion>();
 
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
 
-var app = builder.Build();
-
-// Configure the HTTP request pipeline.
+var app = builder.Build();//Inyecta servicios
 if (app.Environment.IsDevelopment())
 {
-    app.MapOpenApi();
+    app.UseSwagger();
+    app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
-
-app.UseAuthorization();
+//app.UseAuthorization(); //Crear modelo de seguridad
 
 app.MapControllers();
 
