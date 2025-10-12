@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ClothingStore.Domain.Entities
 {
@@ -14,6 +15,8 @@ namespace ClothingStore.Domain.Entities
 
         [MaxLength(100)]
         public string? Telefono { get; set; }
+
+        public Usuarios? Usuario { get; set; }
 
         public List<Compras>? Compras { get; set; }
     }
