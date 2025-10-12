@@ -24,7 +24,7 @@ namespace ClothingStore.Domain.Entities
         public string PasswordHash { get; set; } = string.Empty;
 
         [MaxLength(20)]
-        public string Rol { get; set; } = Roles.Cliente.ToString();  // ← Usar el enum
+        public string? Rol { get; set; }  // Usa el enum
 
         public bool Activo { get; set; } = true;
 
