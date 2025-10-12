@@ -16,6 +16,7 @@ namespace ClothingStore.Persistence.Implementaciones
         public DbSet<Clientes> Clientes { get; set; }
         public DbSet<Compras> Compras { get; set; }
         public DbSet<DetallesCompras> DetallesCompras { get; set; }
+        public DbSet<Usuarios> Usuarios { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

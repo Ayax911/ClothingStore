@@ -10,6 +10,7 @@ namespace ClothingStore.Persistence.Interfaces
         DbSet<Clientes> Clientes { get; set; }
         DbSet<Compras> Compras { get; set; }
         DbSet<DetallesCompras> DetallesCompras { get; set; }
+        DbSet<Usuarios> Usuarios { get; set; }
 
         EntityEntry<T> Entry<T>(T entity) where T : class;
 
