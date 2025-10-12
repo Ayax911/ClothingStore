@@ -125,7 +125,7 @@ namespace ClothingStore.Api.Controllers
         }
 
         // PUT: api/productos/{nombre}
-        [HttpPut("{nombre:string}")]
+        [HttpPut("{nombre}")]
         public async Task<IActionResult> Modificar(string nombre, [FromBody] Productos producto)
         {
             try
@@ -190,7 +190,7 @@ namespace ClothingStore.Api.Controllers
         }
         
         // DELETE: api/productos/{nombre}
-        [HttpDelete("{nombre:string}")]
+        [HttpDelete("{nombre}")]
         public async Task<IActionResult> Borrar(string nombre)
         {
             try
