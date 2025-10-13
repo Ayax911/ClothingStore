@@ -10,9 +10,9 @@ C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Application\obj\Debug\n
 C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Application\obj\Debug\net9.0\ClothingStore.Application.AssemblyInfoInputs.cache
 C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Application\obj\Debug\net9.0\ClothingStore.Application.AssemblyInfo.cs
 C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Application\obj\Debug\net9.0\ClothingStore.Application.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Application\obj\Debug\net9.0\ClothingStore.Application.sourcelink.json
 C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Application\obj\Debug\net9.0\Clothing.01E61CA2.Up2Date
 C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Application\obj\Debug\net9.0\ClothingStore.Application.dll
 C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Application\obj\Debug\net9.0\refint\ClothingStore.Application.dll
 C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Application\obj\Debug\net9.0\ClothingStore.Application.pdb
 C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Application\obj\Debug\net9.0\ref\ClothingStore.Application.dll
-C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Application\obj\Debug\net9.0\ClothingStore.Application.sourcelink.json

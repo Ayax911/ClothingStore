@@ -1,4 +1,5 @@
 C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Persistence\bin\Debug\net9.0\ClothingStore.Persistence.deps.json
+C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Persistence\bin\Debug\net9.0\ClothingStore.Persistence.runtimeconfig.json
 C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Persistence\bin\Debug\net9.0\ClothingStore.Persistence.dll
 C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Persistence\bin\Debug\net9.0\ClothingStore.Persistence.pdb
 C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Persistence\bin\Debug\net9.0\ClothingStore.Domain.dll
@@ -8,11 +9,10 @@ C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Persistence\obj\Debug\n
 C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Persistence\obj\Debug\net9.0\ClothingStore.Persistence.AssemblyInfoInputs.cache
 C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Persistence\obj\Debug\net9.0\ClothingStore.Persistence.AssemblyInfo.cs
 C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Persistence\obj\Debug\net9.0\ClothingStore.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Persistence\obj\Debug\net9.0\ClothingStore.Persistence.sourcelink.json
 C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Persistence\obj\Debug\net9.0\Clothing.54E42C5D.Up2Date
 C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Persistence\obj\Debug\net9.0\ClothingStore.Persistence.dll
 C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Persistence\obj\Debug\net9.0\refint\ClothingStore.Persistence.dll
 C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Persistence\obj\Debug\net9.0\ClothingStore.Persistence.pdb
-C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Persistence\obj\Debug\net9.0\ref\ClothingStore.Persistence.dll
-C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Persistence\obj\Debug\net9.0\ClothingStore.Persistence.sourcelink.json
-C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Persistence\bin\Debug\net9.0\ClothingStore.Persistence.runtimeconfig.json
 C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Persistence\obj\Debug\net9.0\ClothingStore.Persistence.genruntimeconfig.cache
+C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Persistence\obj\Debug\net9.0\ref\ClothingStore.Persistence.dll
