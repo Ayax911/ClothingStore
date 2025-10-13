@@ -171,3 +171,4 @@ C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Api\bin\Debug\net9.0\Sw
 C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Api\bin\Debug\net9.0\BCrypt.Net-Next.dll
+C:\Users\USUARIO\Desktop\ClothingStore\src\ClothingStore.Api\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
