@@ -1,0 +1,13 @@
+*.json
+
+.vs/
+
+bin/
+
+obj/
+
+*.user
+
+*.cache
+
+*.dbmdl
