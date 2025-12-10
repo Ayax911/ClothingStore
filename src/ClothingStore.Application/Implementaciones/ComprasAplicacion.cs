@@ -48,6 +48,21 @@ namespace ClothingStore.Application.Implementaciones
             if (existe)
                 throw new Exception("lbCodigoExistente");
 
+            //Calcular ValorBruto de cada detalle si no está calculado
+            foreach (var detalle in entidad.DetallesCompras!)
+            {
+                var producto = await _conexion.Productos!.FindAsync(detalle.ProductoId);
+                if (producto == null)
+                    throw new Exception($"Producto con Id {detalle.ProductoId} no existe");
+
+                detalle.Producto = producto;
+                detalle.ValorBruto = detalle.Cantidad * producto.ValorUnitario;
+            }
+
+            // Calcular ValorTotal de la compra
+            entidad.ValorTotal = entidad.DetallesCompras.Sum(d => d.ValorBruto);
+
+
             _conexion.Compras!.Add(entidad);
             await _conexion.SaveChangesAsync();
             return entidad;

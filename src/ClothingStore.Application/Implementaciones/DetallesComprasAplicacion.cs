@@ -46,6 +46,16 @@ namespace ClothingStore.Application.Implementaciones
             if (!compraExiste || !productoExiste)
                 throw new Exception("lbFKInvalida");
 
+             if (entidad.Cantidad <= 0 || entidad.Producto == null)
+            {
+                // Opcional: cargar producto desde DB si no está cargado
+                entidad.Producto = await _conexion.Productos!.FindAsync(entidad.ProductoId);
+                if (entidad.Producto == null)
+                    throw new Exception("Producto no existe");
+            }
+
+            entidad.ValorBruto = entidad.Cantidad * entidad.Producto!.ValorUnitario;
+
             _conexion.DetallesCompras!.Add(entidad);
             await _conexion.SaveChangesAsync();
             return entidad;
@@ -58,6 +68,16 @@ namespace ClothingStore.Application.Implementaciones
 
             if (entidad.Id == 0)
                 throw new Exception("lbNoSeGuardo");
+
+             if (entidad.Cantidad <= 0 || entidad.Producto == null)
+            {
+                // Opcional: cargar producto desde DB si no está cargado
+                entidad.Producto = await _conexion.Productos!.FindAsync(entidad.ProductoId);
+                if (entidad.Producto == null)
+                    throw new Exception("Producto no existe");
+            }
+
+    entidad.ValorBruto = entidad.Cantidad * entidad.Producto!.ValorUnitario;
 
             var entry = _conexion.Entry(entidad);
             entry.State = EntityState.Modified;
